@@ -1,0 +1,252 @@
+%-------------------------
+% Seongyu Kim- Academic CV
+% LaTeX Template for Overleaf
+%-------------------------
+ 
+\documentclass[letterpaper,11pt]{article}
+ 
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[colorlinks=true, linkcolor=NavyBlue, urlcolor=NavyBlue, citecolor=NavyBlue]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{needspace}
+\newcommand{\resumeSubheadingRef}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & {\footnotesize #4} \\
+        {\footnotesize #3} & \footnotesize #2\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+ 
+% Custom colors
+\definecolor{pubblue}{RGB}{0, 70, 160}
+\definecolor{awardorange}{RGB}{200, 80, 0}
+ 
+\geometry{
+  top=0.6in,
+  bottom=0.6in,
+  left=0.6in,
+  right=0.6in
+}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\tiny Last Updated: April, 2026}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+ 
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+ 
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+ 
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-2pt}}}
+}
+ 
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+ 
+\newcommand{\resumeSubheadingExtra}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \multicolumn{2}{l}{\textit{\small#5}} \\
+      \multicolumn{2}{l}{\textit{\small#6}} \\
+    \end{tabular*}\vspace{-7pt}
+}
+ 
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+ 
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+ 
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+ 
+%-------------------------------------------
+\begin{document}
+
+
+%----------HEADING--------------------------
+\begin{center}
+  {\Huge \scshape \textbf{Seongyu Kim}} \\ \vspace{6pt}
+  \small
+  \faEnvelope\ \href{mailto:seon@mmai.io}{seon@mmai.io}/\href{mailto:kimsk46@kaist.ac.kr}{kimsk46@kaist.ac.kr} \hspace{4pt}
+  \faGlobe\ \href{https://seongyukim.github.io}{seongyukim.github.io} \\ \vspace{2pt}
+  \faGraduationCap\ \href{https://scholar.google.com/citations?user=HLYG_BUAAAAJ&hl=en}{Google Scholar} \hspace{4pt}
+  \faLinkedin\ \href{https://www.linkedin.com/in/seongyu-kim-2592b6218/}{LinkedIn} \hspace{4pt}
+  \faGithub\ \href{https://github.com/seongyuKim}{GitHub} \\ \vspace{2pt}
+  Multimodal AI Lab, KAIST
+\end{center}
+
+%-----------RESEARCH INTEREST---------------
+\section{Research Interest}
+My research focuses on multimodal AI, with a particular interest in cross-modal alignment across diverse modalities --- including vision, speech, sound, and touch. I investigate how self-supervised learning captures correspondences across modalities, with the goal of connecting and understanding multi-sensory information in real-world environments.
+
+%-----------EDUCATION-----------------------
+\section{Education}
+\resumeSubHeadingListStart
+ 
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{Korea Advanced Institute of Science and Technology (KAIST)} & Mar 2023 -- Present \\
+      \textit{\small Integrated MS/PhD in Electrical Engineering} & \textit{\small Daejeon, South Korea} \\
+    \end{tabular*}
+    \resumeItemListStart
+      \resumeItem{Advisor: Joon Son Chung}
+    \resumeItemListEnd
+ 
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{Korea Advanced Institute of Science and Technology (KAIST)} & Mar 2018 -- Feb 2023 \\
+      \textit{\small BS in Electrical Engineering} & \textit{\small Daejeon, South Korea} \\
+    \end{tabular*}
+ 
+\resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS--------------------
+\section{Publications \hfill \textcolor{pubblue}{\scriptsize C=Conference, J=Journal, P=Patent, S=In Submission, T=Thesis}}
+\vspace{0.2mm}
+\small{
+\begin{enumerate}[leftmargin=*, labelsep=0.5em, align=left, widest={[\textbf{J.1}]}, itemindent=0em]
+
+\item[\textbf{[C.2]}] \textbf{Seeing Through Touch: Tactile-Driven Visual Localization of Material Regions.} \\
+\textbf{Seongyu Kim}, Seoungwoo Lee, Joon Son Chung, Arda Senocak. \\
+\textit{IEEE / CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026.}
+\vspace{0.2mm}
+
+\item[\textbf{[J.1]}] \textbf{EDNet: A Distortion-Agnostic Speech Enhancement Framework with Gating Mamba Mechanism and Phase Shift-Invariant Training.} \\
+Doyeop Kwak, Youngjoon Jang, \textbf{Seongyu Kim}, Joon Son Chung. \\
+\textit{IEEE Transactions on Audio, Speech and Language Processing (TASLP), 2026.}
+\vspace{0.2mm}
+
+\item[\textbf{[C.1]}] \textbf{Seeing Speech and Sound: Distinguishing and Locating Audio Sources in Visual Scenes} \\
+Hyeonggon Ryu*, \textbf{Seongyu Kim*}, Joon Son Chung, Arda Senocak. \\
+\textit{IEEE / CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025.}
+\vspace{0.2mm}
+
+\end{enumerate}
+\textit{* denotes equal contribution.}
+}
+
+%-----------HONORS AND AWARDS---------------
+\section{Honors and Awards}
+\resumeSubHeadingListStart
+
+\resumeSubheadingRef
+  {Outstanding Teaching Assistant Award}{}{Deep Learning for Visual Understanding}{2025}
+
+\resumeSubheadingRef
+  {Dean's List, College of Engineering, KAIST}{}{}{2021}
+
+\resumeSubHeadingListEnd
+
+%-----------ACADEMIC ACTIVITIES-------------
+\section{Academic Activities}
+\resumeSubHeadingListStart
+
+\resumeSubheadingRef
+  {Deep Learning for Computer Vision (EE488/EE40034)}{}{Teaching Assistant}{Fall 2023, 2024, 2025}
+  \vspace{-1mm}
+  \resumeItemListStart
+    \item Head TA in Fall 2025
+  \resumeItemListEnd
+
+\resumeSubheadingRef
+  {Speech Recognition Systems (EE738/EE70038)}{}{Teaching Assistant}{Spring 2024, 2025}
+  \vspace{-1mm}
+  \resumeItemListStart
+    \item Head TA in Spring 2025
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------Experiences--------------------------
+\section{Experiences}
+\resumeSubHeadingListStart
+
+\resumeSubheadingRef
+  {Multimodal AI Lab, KAIST}{South Korea}
+  {Undergraduate Research Intern}{Mar 2022 -- Feb 2023}
+  \vspace{-1mm}
+  \resumeItemListStart
+    \item Advisor: Joon Son Chung
+    \item Audio-Visual Learning, Sound Source Localization, Speech Recognition
+  \resumeItemListEnd
+
+\resumeSubheadingRef
+  {VIC Lab, KAIST}{South Korea}
+  {Undergraduate Research Intern}{Dec 2021 -- Feb 2022}
+  \vspace{-1mm}
+  \resumeItemListStart
+    \item Advisor: Munchurl Kim
+    \item Computer Vision, Super Resolution
+  \resumeItemListEnd
+
+\resumeSubheadingRef
+  {SMILE Lab, KAIST}{South Korea}
+  {Undergraduate Research Intern}{Jun 2021 -- Aug 2021}
+  \vspace{-1mm}
+  \resumeItemListStart
+    \item Advisor: Song Min Kim
+    \item Machine Learning, Embedded System
+  \resumeItemListEnd
+
+\resumeSubheadingRef
+  {SK hynix}{South Korea}
+  {Industry Intern}{Jul 2020 -- Aug 2020}
+  \vspace{-1mm}
+  \resumeItemListStart
+    \item NAND PE / NAND WT Team
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------SKILLS--------------------------
+\section{Skills}
+\resumeSubHeadingListStart
+  \item{
+    \textbf{Programming:} Python, PyTorch, C \hspace{20pt}
+    \textbf{Languages:} Korean (Native), English (Fluent)
+  }
+\resumeSubHeadingListEnd
+
+%-----------REFERENCES----------------------
+\section{References}
+\resumeSubHeadingListStart
+  \item{
+    \textbf{Joon Son Chung} \\
+    Associate Professor, Electrical Engineering \\
+    Korea Advanced Institute of Science and Technology (KAIST) \\
+    \faEnvelope\ \href{mailto:joonsonchung@gmail.com}{joonsonchung@gmail.com} \\
+    \textit{Relationship: PhD advisor at KAIST}
+  }
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
